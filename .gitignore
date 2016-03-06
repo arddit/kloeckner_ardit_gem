@@ -1,0 +1,11 @@
+*.gem
+.bundle
+.config
+.yardoc
+Gemfile.lock
+*.bundle
+*.so
+*.o
+*.a
+*.jpg
+mkmf.log
