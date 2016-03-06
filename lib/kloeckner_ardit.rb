@@ -1,7 +1,7 @@
-require 'kloeckner_ardit/dictionary'
-require 'kloeckner_ardit/flickr_api'
-require 'kloeckner_ardit/crop'
-require 'kloeckner_ardit/montage'
+require './lib/kloeckner_ardit/dictionary'
+require './lib/kloeckner_ardit/flickr_api'
+require './lib/kloeckner_ardit/crop'
+require './lib/kloeckner_ardit/montage'
 require 'rmagick'
 include Magick
 
