@@ -1,6 +1,6 @@
 #!/usr/bin/env ruby
 
 require 'rubygems'
-require 'kloeckner_ardit'
+require './lib/kloeckner_ardit'
 
 puts KloecknerArdit::Kloeckner.begin
