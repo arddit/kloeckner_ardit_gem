@@ -18,19 +18,18 @@ Gem::Specification.new do |s|
                         source such as `/usr/share/dict/words`. Repeat as necessary
                         until you have gathered ten images.
                       }
-  s.authors       = "Ardit Hamzai"
+  s.authors       = ["Ardit Hamzai"]
   s.email         = "ardihamza@gmail.com"
-  s.homepage      = "https://github.com/arddit/kloeckner_ardit_gem"
-  s.files         = Dir['lib/   *.rb'] + Dir['bin/*']
-  s.files         += Dir['[A-Z]*'] + Dir['spec/**/*']
+  s.homepage      = ""
+  s.files         = `git ls-files`.split($\)
   s.executables   << "kloeckner_ardit"
   s.require_paths = ["config", "lib/kloeckner_ardit"]
   s.homepage      = ""
   s.license       = 'MIT'
 
-  s.add_development_dependency "rspec", '~> 3.4.0'
-  s.add_development_dependency "rake", '~> 10.5.0'
+  s.add_development_dependency "rspec", '~> 3.4', '>= 3.4.0'
+  s.add_development_dependency "rake", '~> 10.5', '>= 10.5.0'
 
-  s.add_runtime_dependency "flickr_fu", '~> 0.3.4'
-  s.add_runtime_dependency "rmagick", '~> 2.15.4'
+  s.add_runtime_dependency "flickr_fu", '~> 0.3', '>= 0.3.4'
+  s.add_runtime_dependency "rmagick", '~> 2.15', '>= 2.15.4'
 end
