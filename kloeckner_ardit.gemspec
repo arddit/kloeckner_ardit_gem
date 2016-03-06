@@ -1,6 +1,4 @@
 # coding: utf-8
-lib = File.expand_path('../lib/kloeckner_ardit', __FILE__)
-$LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 
 Gem::Specification.new do |s|
   s.name          = 'kloeckner_ardit'
@@ -22,15 +20,17 @@ Gem::Specification.new do |s|
                       }
   s.authors       = "Ardit Hamzai"
   s.email         = "ardihamza@gmail.com"
-  s.files         = [`git ls-files -z`.split("\x0")]
+  s.homepage      = "https://github.com/arddit/kloeckner_ardit_gem"
+  s.files         = Dir['lib/   *.rb'] + Dir['bin/*']
+  s.files         += Dir['[A-Z]*'] + Dir['spec/**/*']
   s.executables   << "kloeckner_ardit"
   s.require_paths = ["config", "lib/kloeckner_ardit"]
   s.homepage      = ""
   s.license       = 'MIT'
 
-  s.add_development_dependency "rspec"
-  s.add_development_dependency "rake"
+  s.add_development_dependency "rspec", '~> 3.4.0'
+  s.add_development_dependency "rake", '~> 10.5.0'
 
-  s.add_runtime_dependency "flickr_fu"
-  s.add_runtime_dependency "rmagick"
+  s.add_runtime_dependency "flickr_fu", '~> 0.3.4'
+  s.add_runtime_dependency "rmagick", '~> 2.15.4'
 end
