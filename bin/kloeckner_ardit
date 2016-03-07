@@ -1,6 +1,7 @@
 #!/usr/bin/env ruby
 
 require 'rubygems'
-require_relative 'kloeckner_ardit'
+require 'kloeckner_ardit'
+Dir.glob('lib/**/*.rb') {|file| require File.basename(file)}
 
 puts KloecknerArdit::Kloeckner.begin
