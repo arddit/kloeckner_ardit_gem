@@ -29,6 +29,7 @@ Gem::Specification.new do |s|
 
   s.add_development_dependency "rspec", '~> 3.4', '>= 3.4.0'
   s.add_development_dependency "rake", '~> 10.5', '>= 10.5.0'
+  s.add_development_dependency "bundler", "~> 1.11", '>= 1.11.0'
 
   s.add_runtime_dependency "flickr_fu", '~> 0.3', '>= 0.3.4'
   s.add_runtime_dependency "rmagick", '~> 2.15', '>= 2.15.4'
