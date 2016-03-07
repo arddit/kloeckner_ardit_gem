@@ -1,5 +1,4 @@
 #!/usr/bin/env ruby
-Dir.glob('lib/*.rb') {|file| require File.basename(file)}
 
 require 'rubygems'
 require './lib/kloeckner_ardit'
